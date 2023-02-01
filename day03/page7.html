@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       //1. 가로 22.1, 세로 33.1
+       // 사각형의 면적을 구해서 출력
+       width = prompt('가로 길이를 입력하세요')
+       height = prompt('세로 길이를 입력하세요')
+       result = parseFloat(width) * parseFloat(height)
+       alert('사각형의 면적은 ' + result.toFixed(1) + '입니다.')
+       
+       //소수점 자르기 result.toFixed(1)
+       //나중에는 반올림도 가능하다.
+
+       //2. 커피 한 잔 가격, 커피 구매 갯수를 입력받으세요!
+       // 전체 결제 금액을 구해서 출력
+       coffee_price = prompt('커피 한 잔의 가격을 입력하세요')
+       coffee_quantity = prompt('커피는 몇 잔입니까?')
+       result2 = parseInt(coffee_price) * parseInt(coffee_quantity)
+       alert('전체 결제금액은 ' + result2 + '입니다.')
+
+       //3. 사과의 가격이 2000, 배의 가격이 3000
+       //사과 구매 갯수 3, 배 구매 갯수 2
+       //전체 결제 금액을 구해서 출력
+       apple_price = 2000 
+       //변하지 않는 값이면 대문자로 const PRICE (상수 / 변경불가능)
+       //상수 값을 변화 시키면 Assignment 에러가 뜸.
+       pear_price = 3000    
+       apple_quantity = prompt('사과 구매 갯수는?')
+       pear_quantity = prompt('배 구매 갯수는?')
+       result3 = (apple_price * parseInt(apple_quantity)) + (pear_price * parseInt(pear_quantity))
+       alert('전체 결제금액은 ' + result3 + '입니다.')
+       //결과 값을 result3라는 변수 값으로 설정해서 출력해야 함.
+
+       //4. 어제 온도 25도, 오늘 온도 10도
+       //어제와 오늘 온도의 평균은?
+       yesterday_temp = prompt('어제의 기온은?')
+       today_temp = prompt('오늘의 기온은?')
+       average_temp = (parseFloat(yesterday_temp) + parseFloat(today_temp)) / 2
+       alert('어제와 오늘의 평균기온은 ' + average_temp + '입니다.')
+       
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
