@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #total {
+            background: lightcyan;
+            height: 1000px;
+        }
+
+        #top {
+            width: 800px;
+            height: 100px;
+            background: lime;
+            /* padding: 2px; */
+        }
+
+        #top2 {
+            background-color: black;
+            text-align: center;
+            color: yellow;
+
+            width: 200px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            border-radius: 100px 10px;
+            border: 20px outset blue;
+            box-shadow: 10px 10px yellow;
+        }
+
+        #center {
+            width: 800px;
+            height: 1200px;
+            background: beige;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        table {
+            margin: auto;
+            color: white;
+        }
+
+        tr:nth-child(2n) {
+            background: lightcoral;
+        }
+
+        tr:nth-child(2n+1) {
+            background: pink;
+        }
+
+        td:nth-child(2n+1) {
+            background: gray;
+        }
+
+
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+        }
+
+        li:first-child {
+            border-radius: 50px 0px 0px 50px;
+        }
+
+        li:nth-child(2n) {
+            background: orange;
+
+        }
+
+        li:nth-child(2n+1) {
+            background: yellow;
+
+        }
+
+        li:last-child {
+            border-radius: 0px 50px 50px 0px;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background: black;
+            color: lime;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="page50.html">홈</a>
+                </li>
+                <li>
+                    <!-- 자동 완성 안 뜨면 : ctrl + Space -->
+                    <a href="page20.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="page10.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page30.html">게시판</a>
+                </li>
+                <li>
+                    <a href="page40.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            장바구니
+        </div>
+        <div id="center">
+            <h1>검색할 단어를 입력하세요.</h1>
+            <hr color="red">
+            <form action="보내는 서버 주소">
+                <table border="1">
+                    <tr>
+                        <td>검색할 단어</td>
+                        <td><input type="text"></td>
+                        <td><button>검색 시작</button></td>
+                    </tr>
+                </table>
+                <!-- <input type="submit" value="검색 시작"> 
+                이렇게 해도 똑같은 버튼 생성됨.-->
+            </form>
+            <hr color="red">
+            <form action="보내는 서버 주소">
+                <h1>로그인 화면</h1>
+                <table border="1" style="margin-bottom: 10px;">
+                    <tr>
+                        <td>
+                            아이디
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            패스워드
+                        </td>
+                        <td>
+                            <input type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <!--  align="center" 넣어도 됨 가운데 정렬-->
+                            <button style="width: 100px; margin: auto; display: block;">로그인 처리2</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+            <hr color="red">
+            <form action="보내는 서버 주소">
+                <h1>회원가입 화면</h1>
+                <table border="1">
+                    <tr>
+                        <td>
+                            가입 ID
+                        </td>
+                        <td>
+                            <input type="text" placeholder="영문과 숫자 조합">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            가입 PW
+                        </td>
+                        <td>
+                            <input type="text" placeholder="영문과 숫자 특수문자 조합">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            이름
+                        </td>
+                        <td>
+                            <input type="text" placeholder="성과 이름을 순서대로 붙여 쓰세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            성별
+                        </td>
+                        <td>
+                            <input type="radio" name="gender">남
+                            <input type="radio" name="gender">여
+                            <!-- name="gender" 넣어줘야 중복 체크 안됨. -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            취미
+                        </td>
+                        <td>
+                            <input type="checkbox" name="hobby">등산
+                            <input type="checkbox" name="hobby">자전거
+                            <input type="checkbox" name="hobby">수영
+                            <input type="checkbox" name="hobby">달리기
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            전화번호
+                        </td>
+                        <td>
+                            <select>
+                                <option>SKT</option>
+                                <option>KT</option>
+                                <option>SKT</option>
+                                <option>알뜰폰</option>
+                            </select>
+                            <input type="number" placeholder="-없이 이어서 입력">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            생년월일
+                        </td>
+                        <td>
+                            <input type="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            가입날짜
+                        </td>
+                        <td>
+                            <input type="datetime">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            가입한 주
+                        </td>
+                        <td>
+                            <input type="week">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            하고싶은 말
+                        </td>
+                        <td>
+                            <input type="text" placeholder="100글자 이내">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button>회원가입</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

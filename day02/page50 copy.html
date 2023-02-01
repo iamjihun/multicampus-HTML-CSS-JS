@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #total {
+            background: lightpink;
+            height: 1000px;
+        }
+
+        #top {
+            width: 800px;
+            height: 100px;
+            background: coral;
+            /* padding: 2px; */
+        }
+
+        #top2 {
+            background-color: black;
+            text-align: center;
+            color: yellow;
+
+            width: 200px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            border-radius: 100px 10px;
+            border: 20px outset blue;
+            box-shadow: 10px 10px yellow;
+        }
+
+        #center {
+            width: 800px;
+            height: 500px;
+            background: beige;
+            /* 아래 내용은 정 중앙에 오게 하는 것
+            align-items : 위아래
+            justify-content : 좌우 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+
+        }
+
+        ul {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+    
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            width: 70px;
+            height: 25px;
+            text-align: center;
+        
+        }
+
+        li:first-child {
+            border-radius: 50px 0px 0px 50px;
+        }
+
+        li:nth-child(2n) {
+            background: darkkhaki;
+
+        }
+
+        li:nth-child(2n+1) {
+            background: brown;
+
+        }
+
+        li:last-child {
+            border-radius: 0px 50px 50px 0px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background: black;
+            color: lime;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="page50.html">홈</a>
+                </li>
+                <li>
+                    <!-- 자동 완성 안 뜨면 : ctrl + Space -->
+                    <a href="page20.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="page10.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page30.html">게시판</a>
+                </li>
+                <li>
+                    <a href="page40.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            장바구니
+        </div>
+        <div id="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vvE3Q1EsspM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
+</body>
+
+</html>

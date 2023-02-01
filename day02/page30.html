@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #total {
+            background: lightcyan;
+            height: 1000px;
+        }
+
+        #top {
+            width: 800px;
+            height: 100px;
+            background: lime;
+            /* padding: 2px; */
+        }
+
+        #top2 {
+            background-color: black;
+            text-align: center;
+            color: yellow;
+
+            width: 200px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            border-radius: 100px 10px;
+            border: 20px outset blue;
+            box-shadow: 10px 10px yellow;
+        }
+
+        #center {
+            
+            text-align: center;
+            width: 800px;
+            height: 500px;
+            background: beige;
+        }
+
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+        }
+
+        li:first-child {
+            border-radius: 50px 0px 0px 50px;
+        }
+
+        li:nth-child(2n) {
+            background: orange;
+
+        }
+
+        li:nth-child(2n+1) {
+            background: yellow;
+
+        }
+
+        li:last-child {
+            border-radius: 0px 50px 50px 0px;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background: black;
+            color: lime;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="page50.html">홈</a>
+                </li>
+                <li>
+                    <!-- 자동 완성 안 뜨면 : ctrl + Space -->
+                    <a href="page20.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="page10.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page30.html">게시판</a>
+                </li>
+                <li>
+                    <a href="page40.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            장바구니
+        </div>
+        <div id="center">
+            <br>
+            <table border="1" align="center">
+                <tr style="background-color: green;">
+                    <td>항목</td>
+                    <td>입력</td>
+                </tr>
+                <tr>
+                    <td>번호</td>
+                    <td><input type="text" style="background: pink;"></td>
+                </tr>
+                <tr>
+                    <td>제목</td>
+                    <td><input type="text" style="background: pink;"></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td><input type="text" style="background: pink;"></td>
+                </tr>
+                <tr>
+                    <td>작성자</td>
+                    <td><input type="text" style="background: pink;"></td>
+                </tr>
+                <tr style="background-color: yellow;">
+                    <td colspan="2">
+                        <button>글쓰기 완료.</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

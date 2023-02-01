@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[src $=jpg] {
+            border: 10px dotted gold;
+        }
+
+        img[src $=png] {
+            border: 20px double brown;
+        }
+
+        #d1>p {
+            background: black;
+            color: lime;
+        }
+
+        #d2 p {
+            background: gray;
+            color: blue;
+        }
+
+        #d2 p:nth-child(1) {
+            background: gray;
+            color: red;
+        }
+        #d2 p:nth-child(2) {
+            background: gray;
+            color: green;
+        }
+
+        #d2 a {
+            background: yellow;
+        }
+
+        #d2 a:hover {
+            background: green;
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Image20230131134716.png" alt="아이들"><br>
+    <img src="Image20230131134722.png" alt="w3로고"><br>
+    <img src="Image20230131134740.jpg" alt="여자1"><br>
+    <img src="Image20230131134746.jpg" alt="여자2"><br>
+    <!-- hr : 가로줄 -->
+    <hr>
+    <div id="d1">
+        <!-- p : 문단, 한줄이 떨어짐. -->
+        <p>내가 좋아하는 음식</p>
+        <div id="d11">
+            <p>나는 한식을 좋아해요.</p>
+            <p>나는 분식을 좋아해요.</p>
+        </div>
+    </div>
+    <div id="d2">
+        <!-- p : 문단, 한줄이 떨어짐. -->
+        <a href="www.naver.com">네이버로</a><br>
+        <p>내가 싫어하는 음식</p>
+        <div id="d22">
+            <p>나는 양식을 싫어해요.</p>
+            <p>나는 일식을 싫어해요.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
