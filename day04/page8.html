@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="out.js"></script>
+    <script>
+        for (let index = 0; index < 3; index++) {//let으로 선언
+            document.write("@@@<br>")
+        }
+
+        site = prompt('당신이 주로 가는 포털사이트는?')
+        if (site == "네이버") {
+            location.href = "http://www.naver.com"
+        }
+        else if (site == "다음") {
+            location.href = "http://www.daum.net"
+        }
+        else {
+            location.href = "http://www.google.com"
+        }
+
+        여행하다()
+        쉬다()
+
+        java = confirm('당신은 자바 프로그래머인가요?')
+        if (java == true) {
+            alert('훌륭한 웹프로그래머시군요!')
+        }
+        else {
+            alert('다른 언어를 사용하시는군요!')
+        }   
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
