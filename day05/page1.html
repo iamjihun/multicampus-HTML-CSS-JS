@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pay() {
+            shop = document.getElementById('shop').value;
+            price = document.getElementById('price').value;
+            price2 = parseInt(price);
+            payment = document.getElementById('payment').value;
+            if (payment == 2) {         
+                price2 = price2 + 1000                     
+                
+            } 
+            else if (payment == 3) {                
+               price2 = price2 + 500
+            }
+            result = document.getElementById('result');
+            result.innerHTML = shop + '에서' + price2 + '원을 결제수단' + payment + '번으로 구매하셨습니다.'
+        }
+
+        
+    </script>
+</head>
+
+<body>
+    <hr color="red">
+    구매상점 : <input type="text" id="shop" value=""><br>
+    결제금액 : <input type="text" id="price" value=""><br>
+    입력수단 : 1-계좌이체 2-신용카드 3-휴대폰결제<br>
+    <input type="text" id="payment" placeholder="결제 수단을 숫자로 입력" value=""><br>
+    <button onclick="pay()">결제버튼</button>
+    <hr color="blue">
+    <div id="result">
+
+    </div>
+
+    <div id="map" style="width:100%; height: 300px;"></div>
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=539f659688108e32890f90ca493d6787"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.8538956, 127.7294407), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new kakao.maps.Map(mapContainer, mapOption); 
+</script>
+</body>
+
+</html>

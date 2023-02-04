@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["calendar"]});
+      google.charts.setOnLoadCallback(drawChart);
+
+   function drawChart() {
+       var dataTable = new google.visualization.DataTable();
+       dataTable.addColumn({ type: 'date', id: 'Date' });
+       dataTable.addColumn({ type: 'number', id: 'Won/Loss' });
+       dataTable.addRows([
+          [ new Date(2023, 1, 30), 37032 ],
+          [ new Date(2023, 1, 31), 38024 ],
+          [ new Date(2023, 2, 1), 38024 ],
+          [ new Date(2023, 2, 2), 38108 ],
+          [ new Date(2023, 2, 3), 38229 ],
+          // Many rows omitted for brevity.
+        ]);
+
+       var chart = new google.visualization.Calendar(document.getElementById('calendar_basic'));
+
+       var options = {
+         title: "수업 들은 날",
+         height: 350,
+       };
+
+       chart.draw(dataTable, options);
+   }
+    </script>
+  </head>
+  <body>
+    <div id="calendar_basic" style="width: 1000px; height: 350px;"></div>
+  </body>
+</html>
